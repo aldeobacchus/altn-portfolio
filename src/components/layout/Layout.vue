@@ -1,14 +1,24 @@
 <template>
   <div>
-    <Header />
+    <Header @toggle-view="handleToggleView" />
     <main>
-      <slot />
+      <CVView v-if="isCVViewActive" />
+      <FeedView v-else />
     </main>
   </div>
 </template>
 
 <script setup lang="ts">
-import Header from './Header.vue'
+import { ref } from 'vue';
+import Header from './Header.vue';
+import CVView from '../../views/CVView.vue';
+import FeedView from '../../views/FeedView.vue';
+
+const isCVViewActive = ref(true);
+
+const handleToggleView = () => {
+  isCVViewActive.value = !isCVViewActive.value;
+};
 </script>
 
 <style scoped>

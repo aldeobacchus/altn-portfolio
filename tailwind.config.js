@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'tex-gyre-heros': ['Tex Gyre Heros', 'Helvetica', 'sans-serif'],
+        'univers-lt-std-ex': ['UniversLTStd-Ex', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
