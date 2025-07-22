@@ -159,3 +159,8 @@ altn-portfolio/
   - `index.html`: The main HTML file served by the application.
   - `package-lock.json`, `package.json`: Node.js package manager files, defining project dependencies and scripts.
   - `README.md`: This file, providing project information.
+
+
+## Features ideas
+
+- Les images doivent avoir une taille donnée dans leur métadonnées, small, medium, large ou peut importe de manière a ce que l'on puisse choisir de forcer une image a etre petite ou grande comparé aux autres
